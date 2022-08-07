@@ -3,6 +3,7 @@ package com.bridgelabz;
 public class SnakeAndLadder {
 
 
+	static final int winningPosition = 100;
 
 	public static void main(String[] args) {
 		
@@ -12,13 +13,11 @@ System.out.println("position of player 1 is:" + position );
 
 int roll = (int)(Math.random()*6)+1;
 System.out.println("after rolling dice:" + roll );
+while (position < winningPosition) {
 
-		
-		/*
- *UC4- repeat till user win 
- */
-while (position < 100) {
+
 int options = (int)(Math.random() * 100 ) % 3;
+
 System.out.println("option = " + options);
 switch (options) {
 case 1:

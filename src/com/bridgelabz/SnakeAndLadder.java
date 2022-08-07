@@ -7,7 +7,7 @@ public class SnakeAndLadder {
 
 	public static void main(String[] args) {
 		
-		int position = 0;
+		int position = 0 , rollingCount= 0;
 System.out.println("welcome to snake and ladder game");
 System.out.println("position of player 1 is:" + position );
 
@@ -33,7 +33,10 @@ case 2:
 	default :
 		System.out.println("safer side...!!");
 }
+rollingCount++;
 System.out.println("position of single player iis = " + position);
 	}
-	}
+System.out.println(" \n Player wins the game!!!");
+System.out.println(" \n Number of roles to win: " + rollingCount);
 }
+	}
